@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
+import StickyHeader from "../StickyHeader";
 
 const Header = () => {
   return (
-    <section className="bg-slate-400 pb-20">
-      <div className="relative m-auto grid h-96 w-full grid-cols-1 items-center justify-between sm:grid-flow-col 2xl:max-w-screen-2xl">
+    <section className="h-auto h-full bg-slate-400">
+      {/* <StickyHeader /> */}
+      <div className="relative m-auto w-full items-center justify-between px-10 pt-20 sm:flex md:px-16 lg:px-16 xl:max-w-screen-2xl xl:max-2xl:pt-20 2xl:max-w-screen-2xl 2xl:pt-36">
         <div className="relative col-span-1 m-auto text-left">
-          <article className="px-5">
+          <article className="">
             <h1>
               <span className="text-5xl font-black tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
                 Frontend
@@ -14,17 +16,17 @@ const Header = () => {
                 Developer
               </span>
             </h1>
-            <p className="mt-4 text-xl sm:text-2xl md:mt-10 md:text-2xl">
+            <p className="mt-4 text-xl sm:text-xl md:mt-10 md:text-2xl">
               I create complex and scalable frontend solutions with great user
               experience
             </p>
             <div className="xs:w-72 flex items-center justify-between">
-              <ul className="my-9 flex justify-between gap-x-12 leading-normal">
-                <li className="lg:text-lg">
+              <ul className="mt-20 flex justify-between gap-x-2 py-12 leading-normal sm:gap-x-8 md:gap-x-6">
+                <li className="text-xs lg:text-lg">
                   Motivated to build efficient and progressive products
                   utilizing optimzed designs and engineering
                 </li>
-                <li className="lg:text-lg">
+                <li className="text-xs lg:text-lg">
                   Built user friendly client solutions for businesses to handle
                   complex business operations
                 </li>
@@ -32,9 +34,9 @@ const Header = () => {
             </div>
           </article>
         </div>
-        <div className="col-span-1 mt-3.5 justify-items-center sm:max-2xl:px-7">
+        <div className="relative w-full justify-items-center max-[640px]:pb-10">
           <Image
-            className="z-2 m-auto h-56 w-56 rounded-full bg-black ring-2 ring-gray-300 min-[660px]:h-80 min-[660px]:w-80 md:h-96 md:w-96"
+            className="z-2 m-auto h-56 w-56 rounded-full bg-black ring-2 ring-gray-300 min-[715px]:h-56 min-[715px]:w-56 md:h-64 md:w-64 lg:h-96 lg:w-96"
             src="/avatar2.jpg"
             alt="Rounded avatar"
             width={1}
