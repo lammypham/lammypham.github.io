@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 const StickyHeader: React.FC = () => {
-  const [showNav, setShowNav] = useState<boolean>(true);
+  const [showNav, setShowNav] = useState<boolean>(false);
 
   const handleClick = (): void => {
     setShowNav(!showNav);
@@ -12,7 +12,7 @@ const StickyHeader: React.FC = () => {
     <header className="fixed z-40 flex w-full items-center justify-between max-[700px]:px-5 min-[701px]:px-8">
       <div className="z-10">
         <Image
-          className="h-20 w-40"
+          className="h-20 w-32 md:w-40"
           width={12}
           height={12}
           src={"/lampham.svg"}
@@ -24,7 +24,7 @@ const StickyHeader: React.FC = () => {
         className={`z-10 flex h-20 w-8 flex-col flex-wrap justify-around `}
       >
         <div
-          className={`inline-flex before:fixed before:h-0.5 before:w-8 before:w-full before:rounded-lg before:bg-black before:duration-500 before:content-[''] after:fixed after:h-0.5 after:w-8 after:w-full after:rounded-lg after:bg-black after:duration-500 ${
+          className={`inline-flex before:fixed before:h-0.5 before:w-8 before:rounded-lg before:bg-black before:duration-500 before:content-[''] after:fixed after:h-0.5 after:w-8  after:rounded-lg after:bg-black after:duration-500 ${
             showNav
               ? "before:right-8 before:top-12 before:rotate-45 after:right-8 after:top-12 after:-rotate-45"
               : "before:rotate-0 after:top-12 after:-rotate-0"
