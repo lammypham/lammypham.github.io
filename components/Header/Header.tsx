@@ -1,11 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import StickyHeader from "../StickyHeader";
 
 const Header = () => {
   return (
-    <section className="h-auto h-full bg-slate-400">
-      {/* <StickyHeader /> */}
+    <section className="h-auto h-auto bg-slate-400">
       <div className="relative m-auto w-full items-center justify-between px-10 pt-20 sm:flex md:px-16 lg:px-16 xl:max-w-screen-2xl xl:max-2xl:pt-20 2xl:max-w-screen-2xl 2xl:pt-36">
         <div className="relative col-span-1 m-auto text-left">
           <article className="">
