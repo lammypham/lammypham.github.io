@@ -4,7 +4,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <section className="h-auto h-auto bg-slate-400">
-      <div className="relative m-auto w-full items-center justify-between px-10 pt-20 sm:flex md:px-16 lg:px-16 xl:max-w-screen-2xl xl:max-2xl:pt-20 2xl:max-w-screen-2xl 2xl:pt-36">
+      <div className="relative m-auto w-full items-center justify-between px-16 pt-36 sm:flex sm:max-md:px-16 lg:px-16 xl:max-w-screen-2xl">
         <div className="relative col-span-1 m-auto text-left">
           <article className="">
             <h1>
@@ -14,7 +14,7 @@ const Header = () => {
                 Developer
               </span>
             </h1>
-            <p className="mt-4 text-xl sm:text-xl md:mt-10 md:text-2xl">
+            <p className="mt-4 text-xl sm:text-xl md:mt-10 md:text-xl lg:text-2xl">
               I create complex and scalable frontend solutions with great user
               experience
             </p>
@@ -34,7 +34,7 @@ const Header = () => {
         </div>
         <div className="relative w-full justify-items-center max-[640px]:pb-10">
           <Image
-            className="z-2 m-auto h-56 w-56 rounded-full bg-black ring-2 ring-gray-300 min-[715px]:h-56 min-[715px]:w-56 md:h-64 md:w-64 lg:h-96 lg:w-96"
+            className="z-2 m-auto h-56 w-56 rounded-full bg-black ring-2 ring-gray-300 min-[715px]:h-56 min-[715px]:w-56 md:h-72 md:w-72 lg:h-96 lg:w-96"
             src="/avatar2.jpg"
             alt="Rounded avatar"
             width={1}
