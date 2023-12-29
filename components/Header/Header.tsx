@@ -33,9 +33,9 @@ const Header: React.FC = () => {
           </div>
         </article>
       </div>
-      <div className="relative w-full justify-items-center max-[640px]:pb-10">
+      <div className="relative w-full justify-items-center pb-10 sm:pb-0">
         <Image
-          className="z-2 m-auto h-56 w-56 rounded-full bg-black ring-2 ring-gray-300 min-[715px]:h-56 min-[715px]:w-56 md:h-72 md:w-72 lg:h-96 lg:w-96"
+          className="z-2 m-auto h-56 w-56 rounded-full bg-black ring-2 ring-gray-300 sm:h-52 sm:w-52 md:h-72 md:w-72 lg:h-96 lg:w-96"
           src="/avatar.jpg"
           alt="Rounded avatar"
           width={1}

@@ -9,7 +9,7 @@ const StickyHeader: React.FC = () => {
     setShowNav(!showNav);
   };
   return (
-    <header className="fixed z-40 flex w-full items-center justify-between max-[700px]:px-5 min-[701px]:px-8">
+    <header className="fixed z-40 flex w-full items-center justify-between px-5 sm:px-8">
       <div className="z-10">
         <Image
           className="h-20 w-32 md:w-40"

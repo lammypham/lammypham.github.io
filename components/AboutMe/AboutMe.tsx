@@ -38,7 +38,7 @@ const AboutMe: React.FC = () => {
         </article>
         <article className="mb-6 flex flex-wrap justify-between">
           <Image
-            className={`m-auto hidden h-20 w-20 md:h-28 md:w-28 lg:h-32 lg:w-32 min-[${COL_FLEX_DIRECTION_QUERY}]:block`}
+            className={`m-auto hidden h-20 w-20 md:block md:h-28 md:w-28 lg:h-32 lg:w-32`}
             src={"design.svg"}
             alt={"engineer"}
             width={1}
@@ -54,7 +54,7 @@ const AboutMe: React.FC = () => {
             </p>
           </div>
           <Image
-            className={`m-auto h-20 w-20 md:h-32 md:w-32 min-[${COL_FLEX_DIRECTION_QUERY}]:hidden`}
+            className={`m-auto h-20 w-20 md:hidden md:h-32 md:w-32`}
             src={"design.svg"}
             alt={"engineer"}
             width={1}
