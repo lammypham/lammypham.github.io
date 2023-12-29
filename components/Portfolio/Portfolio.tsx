@@ -3,6 +3,7 @@ import React from "react";
 // Components
 import Header from "../Header";
 import StickyHeader from "../StickyHeader";
+import AboutMe from "../AboutMe";
 
 const Portfolio = () => {
   return (
@@ -10,7 +11,7 @@ const Portfolio = () => {
       <StickyHeader />
       <Header />
       <section>
-        <div className="h-screen">about me</div>
+        <AboutMe />
       </section>
       <section>
         <div className="h-screen">contact</div>
