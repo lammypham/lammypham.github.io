@@ -62,7 +62,7 @@ const AboutMe: React.FC = () => {
           />
         </article>
         <article className="my-12">
-          <ul className="flex justify-between">
+          <ul className="flex items-center justify-center gap-x-12">
             {SKILLS_SVGS.map((svg) => (
               <li key={svg}>
                 <Image
