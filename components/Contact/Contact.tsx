@@ -8,8 +8,8 @@ import Section from "../Section";
 
 const SERVICE_ID: string = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
 const TEMPLATE_ID: string = process.env
-  .NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
-const PUBLIC_KEY: string = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
+  .NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
+const PUBLIC_KEY: string = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
 
 // TODO: update the env to build time for production
 const Contact = () => {
