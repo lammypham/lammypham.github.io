@@ -4,18 +4,15 @@ import React from "react";
 import Header from "../Header";
 import StickyHeader from "../StickyHeader";
 import AboutMe from "../AboutMe";
+import Contact from "../Contact";
 
 const Portfolio = () => {
   return (
     <div className="h-screen w-full">
       <StickyHeader />
       <Header />
-      <section>
-        <AboutMe />
-      </section>
-      <section>
-        <div className="h-screen">contact</div>
-      </section>
+      <AboutMe />
+      <Contact />
     </div>
   );
 };
