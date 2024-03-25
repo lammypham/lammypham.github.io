@@ -16,7 +16,6 @@ const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const handleSubmit = (event: React.SyntheticEvent): void => {
     event.preventDefault();
-    console.log(SERVICE_ID);
     emailjs
       .sendForm(
         SERVICE_ID,
